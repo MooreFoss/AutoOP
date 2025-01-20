@@ -1,0 +1,8 @@
+name: AutoOP
+version: '1.0-SNAPSHOT'
+main: com.mc.autoop.AutoOP
+api-version: '1.21'
+prefix: AutoOP
+authors: [ MooreFoss ]
+description: Automatically OP the player on the server.
+website: https://github.com/MooreFoss/AutoOP
