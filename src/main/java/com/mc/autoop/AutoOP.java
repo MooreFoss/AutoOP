@@ -8,14 +8,14 @@ public final class AutoOP extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        System.out.println("AutoOP enables successfully.");
+        getLogger().info("AutoOP enables successfully.");
         PluginManager pm = getServer().getPluginManager();
-        pm.registerEvents(new PlayerJoinListener(), this);
+        pm.registerEvents(new PlayerJoinListener(getLogger()), this);
     }
 
     @Override
     public void onDisable() {
         // Plugin shutdown logic
-        System.out.println("AutoOP disables successfully.");
+        getLogger().info("AutoOP disables successfully.");
     }
 }
